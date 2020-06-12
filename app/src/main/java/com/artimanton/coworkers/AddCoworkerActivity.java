@@ -46,7 +46,7 @@ public class AddCoworkerActivity extends AppCompatActivity {
         femaleRadioButton.setOnClickListener(radioButtonClickListener);
 
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_save);
-        setTitle("Add Coworker");
+        setTitle(getString(R.string.title_add_activity));
     }
 
     View.OnClickListener radioButtonClickListener = new View.OnClickListener() {
@@ -69,11 +69,11 @@ public class AddCoworkerActivity extends AppCompatActivity {
         int age = getInteger(String.valueOf(editTextAge.getText()));
         String phone = editTextPhone.getText().toString();
         if (name.trim().isEmpty() || age == 0 || phone.trim().isEmpty())  {
-            Toast.makeText(this, "Please insert a name, age and phone", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.toast_empty_edit, Toast.LENGTH_SHORT).show();
             return;
         }
         if (gender == null)  {
-            Toast.makeText(this, "Please select gender", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.toast_null_gender, Toast.LENGTH_SHORT).show();
             return;
         }
         Intent data = new Intent();

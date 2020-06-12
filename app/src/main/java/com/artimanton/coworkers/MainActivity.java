@@ -62,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
             String gender = data.getStringExtra(AddCoworkerActivity.EXTRA_GENDER);
             Coworker coworker = new Coworker(name, age, phone, gender);
             coworkerViewModel.insert(coworker);
-            Toast.makeText(this, "Coworker saved", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.toast_saved, Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Coworker not saved", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.toast_not_saved, Toast.LENGTH_SHORT).show();
         }
     }
 }
