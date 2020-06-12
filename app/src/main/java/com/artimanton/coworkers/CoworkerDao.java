@@ -29,4 +29,7 @@ public interface CoworkerDao {
 
     @Delete
     void delete(Coworker coworker);
+
+    @Query("DELETE FROM bws_coworkers")
+    void deleteAllCoworker();
 }
