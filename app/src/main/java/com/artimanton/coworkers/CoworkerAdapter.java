@@ -25,10 +25,10 @@ public class CoworkerAdapter extends RecyclerView.Adapter<CoworkerAdapter.NoteHo
         @Override
         public void onBindViewHolder(@NonNull NoteHolder holder, int position) {
             Coworker currentCoworker = coworkers.get(position);
-            holder.textViewName.setText(currentCoworker.name);
-            holder.textViewAge.setText(Integer.toString(currentCoworker.age));
-            holder.textViewPhone.setText(currentCoworker.phone);
-            holder.textViewGender.setText(String.valueOf(currentCoworker.gender));
+            holder.textViewName.setText(currentCoworker.getName());
+            holder.textViewAge.setText(Integer.toString(currentCoworker.getAge()));
+            holder.textViewPhone.setText(currentCoworker.getPhone());
+            holder.textViewGender.setText(String.valueOf(currentCoworker.getGender()));
 
         }
         @Override
