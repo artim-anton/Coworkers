@@ -1,4 +1,4 @@
-package com.artimanton.coworkers;
+package com.artimanton.coworkers.db;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -10,5 +10,12 @@ public class Coworker {
     public String name;
     public int age;
     public String phone;
-    public Boolean gender;
+    public String gender;
+
+    public Coworker(String name, int age, String phone, String gender) {
+        this.name = name;
+        this.age = age;
+        this.phone = phone;
+        this.gender = gender;
+    }
 }

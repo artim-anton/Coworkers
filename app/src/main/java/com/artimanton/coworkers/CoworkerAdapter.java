@@ -8,6 +8,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.artimanton.coworkers.db.Coworker;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,9 +25,9 @@ public class CoworkerAdapter extends RecyclerView.Adapter<CoworkerAdapter.NoteHo
         @Override
         public void onBindViewHolder(@NonNull NoteHolder holder, int position) {
             Coworker currentCoworker = coworkers.get(position);
-            holder.textViewPhone.setText(currentCoworker.name);
-            holder.textViewAge.setText(currentCoworker.age);
-            holder.textViewPhone.setText(String.valueOf(currentCoworker.phone));
+            holder.textViewName.setText(currentCoworker.name);
+            holder.textViewAge.setText(Integer.toString(currentCoworker.age));
+            holder.textViewPhone.setText(currentCoworker.phone);
             holder.textViewGender.setText(String.valueOf(currentCoworker.gender));
 
         }

@@ -6,6 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+import com.artimanton.coworkers.db.Coworker;
+
 import java.util.List;
 
 public class CoworkerViewModel extends AndroidViewModel {

@@ -1,4 +1,4 @@
-package com.artimanton.coworkers;
+package com.artimanton.coworkers.db;
 
 import android.content.Context;
 
